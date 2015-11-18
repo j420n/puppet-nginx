@@ -44,7 +44,7 @@
 #   [*resolver*]            - Array: Configures name servers used to resolve
 #     names of upstream servers into addresses.
 #   [*fastcgi*]             - location of fastcgi (host:port)
-#   [*fastcgi_index*]       - fastcgi index file
+#   [*fastcgi_index*]       - fastcgi index file  
 #   [*fastcgi_params*]      - optional alternative fastcgi_params file to use
 #   [*fastcgi_script*]      - optional SCRIPT_FILE parameter
 #   [*ssl*]                 - Indicates whether to setup SSL bindings for this
