@@ -44,6 +44,7 @@
 #   [*resolver*]            - Array: Configures name servers used to resolve
 #     names of upstream servers into addresses.
 #   [*fastcgi*]             - location of fastcgi (host:port)
+#   [*fastcgi_index*]       - fastcgi index file
 #   [*fastcgi_params*]      - optional alternative fastcgi_params file to use
 #   [*fastcgi_script*]      - optional SCRIPT_FILE parameter
 #   [*ssl*]                 - Indicates whether to setup SSL bindings for this
@@ -217,6 +218,7 @@ define nginx::resource::vhost (
   $proxy_set_body               = undef,
   $resolver                     = [],
   $fastcgi                      = undef,
+  $fastcgi_index                = undef,
   $fastcgi_params               = "${::nginx::config::conf_dir}/fastcgi_params",
   $fastcgi_script               = undef,
   $uwsgi                        = undef,

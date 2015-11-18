@@ -7,6 +7,9 @@
 <% end -%>
 
     fastcgi_pass  <%= @fastcgi %>;
+<% if @fastcgi_index -%>
+    fastcgi_index  <%= @fastcgi_index %>;
+<% end -%>
 <% if @fastcgi_split_path -%>
     fastcgi_split_path_info <%= @fastcgi_split_path %>;
 <% end -%>
